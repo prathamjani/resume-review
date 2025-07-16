@@ -15,10 +15,14 @@ git push -u origin main
 1. **Go to [vercel.com](https://vercel.com)** and sign up with GitHub
 2. **Click "New Project"**
 3. **Import your GitHub repository**
-4. **Configure Environment Variables:**
-   - Variable Name: `REACT_APP_GEMINI_API_KEY`
-   - Value: Your Gemini API key from [Google AI Studio](https://ai.google.dev/)
-5. **Click "Deploy"**
+4. **Click "Deploy"** (it will deploy, but API won't work yet)
+5. **Add Environment Variable:**
+   - Go to project **Settings** → **Environment Variables**
+   - Name: `REACT_APP_GEMINI_API_KEY`
+   - Value: Your actual Gemini API key
+   - Select all environments (Production, Preview, Development)
+   - Click **Save**
+6. **Redeploy:** Go to Deployments → click three dots → "Redeploy"
 
 That's it! Your app will be live in ~2 minutes.
 
